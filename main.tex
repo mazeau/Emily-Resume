@@ -1,0 +1,164 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[11pt, line]{res} 
+
+% \usepackage{fontspec} % font types
+% \setmainfont{Times New Roman}
+
+\usepackage{enumitem}
+\setitemize[0]{leftmargin=*, itemsep=0pt}
+
+\usepackage{times} 
+\usepackage{enumitem}
+\setlist[itemize]{topsep=4pt,noitemsep}
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage[margin=0.75in]{geometry}%left=0.75in,right=0.75in,bottom=0.5in]{geometry}
+\resumewidth=7.0in
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\usepackage{textgreek}
+\renewcommand{\headrulewidth}{24pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{0pt} % allow room for 2-line header
+\setlength{\headsep}{0pt}  % space between header and text
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it E. Mazeau}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.75in % start text higher on the page
+
+\usepackage[bookmarks,
+pdftitle={Resume},
+pdfauthor={Emily Mazeau},
+pdfsubject={},
+pdfcreator={},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+pdfstartview=FitH,
+colorlinks=true,
+linkcolor=black,   %Color for normal internal links.
+anchorcolor=black, %Color for anchor text.
+citecolor=green,   %Color for bibliographical citations in text.
+filecolor=magenta, %Color for URLs which open local files.
+menucolor=red,     %Color for Acrobat menu items.
+urlcolor=black]{hyperref}
+
+\begin{document}
+\thispagestyle{empty} % this page has no header  
+\name{\Large{Emily J. Mazeau}}
+
+\address{136 Fox Point Road, Newington, NH 03801\\\href{mailto:mazeau.e@northeastern.edu}{mazeau.e@northeastern.edu}\\(603) 502-9457}
+\begin{resume}
+
+\vspace{-10pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\centerline{\large{Experience}}}
+
+\textbf{Graduate Researcher}, \href{http://www.northeastern.edu/comocheng/people/}{\sl Northeastern University}, Boston, MA \hspace{0.2in}  \hfill Sept 2017 - Apr 2022
+\begin{itemize}
+    \item Focused on detailed kinetic models and quantum chemistry kinetics in collaboration with the Combustion Research Facility at Sandia National Lab
+    \item Collaborated with Mitsubishi Heavy Industries (MHI) to study the hydroxylammonium nitrate (NH$_3$OHNO$_3$) decomposition mechanism
+    \item Developed the RMG software for heterogeneous catalysis and added linear scaling relations, metal catalysts, complex surface reactions, and coverage dependence
+	\item Mentored undergraduate students conducting independent research projects
+\end{itemize}
+\vspace{-5pt}
+
+\textbf{Undergraduate Researcher}, \href{https://homepages.rpi.edu/~koffam/}{\sl Rensselaer Polytechnic Institute}, Troy, NY  \hfill Aug 2016 - May 2017
+\begin{itemize}
+    \item Focused on producing violacein, a natural antibiotic with anti-tumor properties, using a cellulose degradation system
+    \item Optimized expression of violacein in \textit{E. coli} by testing different media and expression conditions
+    \item Taught and mentored undergraduate and high school students conducting independent research projects
+\end{itemize}
+\vspace{-5pt}
+
+\textbf{Undergraduate Researcher}, \href{https://homepages.rpi.edu/~koffam/}{\sl Rensselaer Polytechnic Institute}, Troy, NY  \hfill May - Aug 2016
+\begin{itemize}
+    \item Expression optimization of  EGI1, an enzyme that performs the first step of cellulose degradation
+    \item Tested the effect of media conditions, temperatures, and induction point by assessing protein secretion and activity
+\end{itemize}
+\vspace{-5pt}
+
+\textbf{Undergraduate Researcher}, \href{https://homepages.rpi.edu/~koffam/}{\sl Rensselaer Polytechnic Institute}, Troy, NY  \hfill Nov 2015 - May 2016
+\begin{itemize}
+    \item Engineered and cloned a signal peptide library for an enzyme, Cel9AT, that performs cellulose degradation into glucose
+    \item Tested activity of the library to identify the signal peptide with highest cellulose degradation activity
+\end{itemize}
+\vspace{-5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\centerline{\large{Education}}} 
+
+\href{http://www.northeastern.edu/}{\textbf{Northeastern University}}, Boston, MA \hspace{0.2in}  \hfill Sept 2017 - Apr 2022 \\
+Ph.D., Chemical Engineering - {\sl Thesis title:} Ongoing Developments in Automatic Generation of Microkinetic Models for Heterogeneous Catalysis using RMG 
+
+\begin{itemize}
+    \item \href{https://doi.org/10.1021/acs.iecr.1c03076} {Extensive High-Accuracy Thermochemistry and Group Additivity Values for Halocarbon Combustion Modeling.
+    \textit{Ind. Eng. Chem. Res.} 2021 \textit{60} (43), 15492-15501.}
+    \item \href{https://pubs.acs.org/doi/10.1021/jacsau.1c00276} {Quantifying the Impact of Parametric Uncertainty on Automatic Mechanism Generation for CO$_2$ Hydrogenation on Ni(111).
+    \textit{JACS Au} 2021 \textit{1} (10), 1656-1673.}
+    \item \href{https://doi.org/10.1021/acscatal.0c04100}{Automated Mechanism Generation Using Linear Scaling Relationships and Sensitivity Analyses Applied to Catalytic Partial Oxidation of Methane.
+    \textit{ACS Catal.} 2021 \textit{11} (12), 7114-7125.}
+    \item \href{https://doi.org/10.1021/acs.jcim.0c01480}{Reaction Mechanism Generator v3.0.0: Advances in Automatic Mechanism Generation.
+    \textit{J Chem. Inf. Model.} 2021 \textit{61} (6), 2686-2696.}
+    \item \href{https://doi.org/10.1021/acs.iecr.9b01464}{Computer-generated kinetics for coupled heterogeneous/homogeneous systems: a case study in catalytic combustion on platinum.
+    \textit{Ind. Eng. Chem. Res.} 2019 \textit{58} (38), 17682-17691.}
+
+\end{itemize}
+
+\vspace{-5pt}
+\href{http://www.upenn.edu/}{\textbf{Rensselaer Polytechnic University}}, Troy, NY \hspace{0.2in}  \hfill Sept 2014 - May 2017 \\
+B.S., Chemical and Biological Engineering
+
+\begin{itemize}
+    \item \href{https://doi.org/10.1021/acssynbio.8b00186}{Engineering \textit{Bacillus megaterium} strains to secrete cellulases for synergistic cellulose degradation in a microbial community.
+    \textit{ACS Synth. Biol.} 2018 \textit{7} (10), 2413-2422.}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\centerline{\large{Skills}}}
+
+\textbf{Data Science:} Pandas, OOP, data structures, statistical modeling\\
+\textbf{Programming:} Git, GitHub, MatLab, Python, Unix/Linux environment, SLURM, HPC\\
+\textbf{Simulation:} Cantera, Chemkin, quantum chemistry, ASE, RMG
+% \textbf{Laboratory:} Cell culture, HPLC, 
+% \textbf{Programming \& Simulation:} Python, MatLab, Java, C++, Quantum chemistry, Cantera, Chemkin \\
+% \textbf{Computer:} Microsoft Office, Adobe Creative Suite \\
+% \textbf{Laboratory:} Cell culture, protein biochemistry, bioreactor operations and maintenance
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{\centerline{\large{Publications}}}
+
+% \href{https://pubs.acs.org/doi/abs/10.1021/acs.jpca.7b07361}{\textbf{Bhoorasingh, P. L.}, Slakman, B. L., Seyedzadeh Khanshan, F., Cain, J. Y., \& West, R. H. Automated transition state theory calculations for high-throughput kinetics. \textit{J. Phys. Chem. A} 121 (37), pp 6896-6904 (2017).}
+
+% \href{http://xlink.rsc.org/?DOI=c5cp04706d}{\textbf{Bhoorasingh, P. L.} \& West, R. H. Transition state geometry prediction using molecular group contributions. \textit{Phys. Chem. Chem. Phys.} 17, 32173-32182 (2015).}
+
+% Van de Vijver, R., Vandewiele, N. M., \textbf{Bhoorasingh, P. L.}, Slakman, B. L., Seyedzadeh Khanshan, F., Carstensen, H. H., Reyniers, M. F., Marin, G. B., West, R. H. \& Van Geem, K. M. (2015). Automatic Mechanism and Kinetic Model Generation for Gas‐and Solution‐Phase Processes: A Perspective on Best Practices, Recent Advances, and Future Challenges. \textit{Int. J. Chem. Kinet.}, 47(4), 199-231.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{\centerline{\large{Memberships}}}
+% % {\sl NEU Chem. Eng. Graduate Student Council} \hspace{0.2in}  \hfill Webmaster (2012 - 2014) \\
+% {\sl MIT Caribbean Club} \hspace{0.2in}  \hfill Secretary (2004-05), Treasurer (2005-06), VP (2006-07) \\
+% {\sl Jamaica U20 Water Polo} \hspace{0.2in}  \hfill Vice Captain (2002-2004)
+% {\sl MIT Water Polo} \hspace{0.2in}  \hfill 2003-2004
+ 
+\end{resume} 
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
